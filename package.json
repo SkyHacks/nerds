@@ -1,0 +1,23 @@
+{
+  "name": "nerds",
+  "version": "0.0.1",
+  "description": "The API after every nerd's heart...",
+  "main": "dist/nerds.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "data",
+    "geek",
+    "nerd",
+    "Pokemon",
+    "Star",
+    "Wars"
+  ],
+  "author": "Skyler Hair",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.13.1"
+  }
+}

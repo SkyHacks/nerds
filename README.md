@@ -13,7 +13,7 @@ npm install nerds
 ```
 
 ## Examples
-```
+```javascript
 let nerds = require('nerds');
 
 let singleSW = nerds.resolve("Star Wars").asArray();

@@ -1,23 +1,35 @@
 {
   "name": "nerds",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The API after every nerd's heart...",
   "main": "dist/nerds.js",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyHacks/nerds.git"
   },
   "keywords": [
     "api",
     "data",
+    "generator"
     "geek",
     "nerd",
     "Pokemon",
     "Star",
-    "Wars"
+    "Wars",
+    "Harry",
+    "Potter"
   ],
-  "author": "Skyler Hair",
+  "author": "Skyler Hair <skyler.m.hair@gmail.com> (http://www.skylerhair.com/)",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "4.13.1"
-  }
+  "bugs": {
+    "url": "https://github.com/SkyHacks/nerds/issues"
+  },
+  "homepage": "https://github.com/SkyHacks/nerds#readme"
 }

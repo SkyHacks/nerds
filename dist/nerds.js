@@ -20,22 +20,25 @@ let _search;
 
 /**
  * Resolves the chosen topic and number of results
- * @param  {str}      topic       Valid topic, i.e. "Harry Potter" or "Star Wars"
+ * @param  {str}      topic       [Optional] Valid topic, i.e. "Harry Potter" or "Star Wars"
  * @param  {str|num}  results     [Optional] Max results to be returned
- * @return {obj}                  Chainable nerds object
+ * @return {obj|arr}              Chainable nerds object | (If no topic) List of valid topics
  */
 function resolve (topic, results) {
-	if (!topic) throw _paramException(1);
-	if (typeof topic != 'string') throw _paramException(2);
-	if (!ALL_TOPICS.hasOwnProperty(topic)) throw _paramException(3);
-	if ( typeof results !== 'undefined' && !(typeof results === 'number' || typeof results === 'string') ) throw _paramException(4);
-	if (results < 0) throw _paramException(5);
+	if (topic && typeof topic != 'string') throw _paramException(1);
+	if (topic && !ALL_TOPICS.hasOwnProperty(topic)) throw _paramException(2);
+	if ( typeof results !== 'undefined' && ( !(typeof results === 'number' || typeof results === 'string') || isNaN(results) ) ) throw _paramException(3);
+	if (results < 0) throw _paramException(4);
 
-	_search = {
-		results: _sampleSize(ALL_TOPICS[topic].data, results),
-		topic
+	if (!topic) {
+		return Object.keys(ALL_TOPICS);  //If no topic is given, a list of valid topics is returned
+	} else {
+		_search = {
+			results: _sampleSize(ALL_TOPICS[topic].data, results),
+			topic
+		}
+		return nerds;
 	}
-	return nerds;
 }
 
 /**
@@ -123,9 +126,9 @@ function _getResults () {
  */
 function _validateFields (fields, method) {
 	if ( !(_search  && _search.results) ) throw _funcException(2);
-	if (!_isArray(fields)) throw _paramException(6, method);
-	if (fields.some(x => typeof x != 'string')) throw _paramException(7, method);
-	if (fields.some(x => ALL_TOPICS[_search.topic].keys.indexOf(x) == -1)) throw _paramException(8, method);
+	if (!_isArray(fields)) throw _paramException(5, method);
+	if (fields.some(x => typeof x != 'string')) throw _paramException(6, method);
+	if (fields.some(x => ALL_TOPICS[_search.topic].keys.indexOf(x) == -1)) throw _paramException(7, method);
 }
 
 /**
@@ -136,14 +139,13 @@ function _validateFields (fields, method) {
  */
 function _paramException (errorCode, metadata) {
 	const ERROR_MESSAGES = {
-		1: () => new Error     (`==> Parameter missing! resolve() expects a topic like 'Harry Potter' or 'Star Wars' as the first argument.`),
-		2: () => new TypeError (`==> resolve() expects a STRING like 'Harry Potter' or 'Star Wars' as the first argument.`),
-		3: () => new Error     (`==> Unknown topic! Make sure you are passing in a valid topic as a STRING. Like 'Harry Potter' or 'Star Wars'.`),
-		4: () => new TypeError (`==> resolve() expects a max results NUMBER or STRING as the second argument.`),
-		5: () => new Error     (`==> resolve() expects the second argument to represent a positive integer.`),
-		6: () => new TypeError (`==> ${metadata}() expects the first argument to be an array of fields. Like ['first name', 'last name'].`),
-		7: () => new Error     (`==> Invalid field! ${metadata}() expects an ARRAY of STRINGS as the first argument.`),
-		8: () => new Error     (`==> Invalid field! Double check the fields you are passing to ${metadata}(). Try nerds.resolve(<topics>).fields()`),
+		1: () => new TypeError (`==> resolve() expects a STRING like 'Harry Potter' or 'Star Wars' as the first argument.`),
+		2: () => new Error     (`==> Unknown topic! Make sure you are passing in a valid topic as a STRING. Like 'Harry Potter' or 'Star Wars'.`),
+		3: () => new TypeError (`==> resolve() expects a NUMBER or STRING representing the number of results as the second argument.`),
+		4: () => new Error     (`==> resolve() expects the second argument to represent a positive integer.`),
+		5: () => new TypeError (`==> ${metadata}() expects the first argument to be an array of fields. Like ['first name', 'last name'].`),
+		6: () => new Error     (`==> Invalid field! ${metadata}() expects an ARRAY of STRINGS as the first argument.`),
+		7: () => new Error     (`==> Invalid field! Double check the fields you are passing to ${metadata}(). Try nerds.resolve(<topics>).fields()`),
 	};
 	return ERROR_MESSAGES[errorCode]();
 }

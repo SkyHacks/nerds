@@ -1,6 +1,6 @@
 {
   "name": "nerds",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The API after every nerd's heart...",
   "main": "dist/nerds.js",
   "dependencies": {
@@ -21,10 +21,8 @@
     "geek",
     "nerd",
     "Pokemon",
-    "Star",
-    "Wars",
-    "Harry",
-    "Potter"
+    "Star Wars",
+    "Harry Potter"
   ],
   "author": "Skyler Hair <skyler.m.hair@gmail.com> (http://www.skylerhair.com/)",
   "license": "MIT",

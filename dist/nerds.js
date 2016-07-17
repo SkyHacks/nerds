@@ -32,7 +32,7 @@ function resolve (topic, results) {
 	if (results < 0) throw _paramException(5);
 
 	_search = {
-		results: _sampleSize(ALL_TOPICS[topic], results),
+		results: _sampleSize(ALL_TOPICS[topic].data, results),
 		topic
 	}
 	return nerds;
@@ -44,7 +44,7 @@ function resolve (topic, results) {
  */
 function fields () {
 	if ( !(_search  && _search.results) ) throw _funcException(1);
-	_search.results = ALL_TOPICS[`${_search.topic}_Keys`];
+	_search.results = ALL_TOPICS[_search.topic].keys;
 	return _getResults();
 }
 
@@ -125,7 +125,7 @@ function _validateFields (fields, method) {
 	if ( !(_search  && _search.results) ) throw _funcException(2);
 	if (!_isArray(fields)) throw _paramException(6, method);
 	if (fields.some(x => typeof x != 'string')) throw _paramException(7, method);
-	if (fields.some(x => ALL_TOPICS[`${_search.topic}_Keys`].indexOf(x) == -1)) throw _paramException(8, method);
+	if (fields.some(x => ALL_TOPICS[_search.topic].keys.indexOf(x) == -1)) throw _paramException(8, method);
 }
 
 /**

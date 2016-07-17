@@ -112,11 +112,11 @@ Sets the fields to be included in the results. Accepts an array of strings. Any 
 nerds.resolve('Star Wars').include(['first', 'last'])  //sets fields and returns the nerd context
 ```
 
+`include` returns the `nerds` context, meaning you can (and should) continue chaining subsequent methods.
+
 Parameter | Type | Description
 ---|---|---
 fields|Array of Strings|The fields to include in the results.
-
-`include` returns the `nerds` context, meaning you can (and should) continue chaining subsequent methods.
 
 ---
 

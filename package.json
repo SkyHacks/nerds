@@ -1,6 +1,6 @@
 {
   "name": "nerds",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "The API after every nerd's heart...",
   "main": "dist/nerds.js",
   "dependencies": {

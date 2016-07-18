@@ -57,12 +57,12 @@ nerdsJS exposes an API that lets you chain methods together to get the exact fie
 
 ### `resolve([topic], [results])`
 
-Sets the topic and the max number of results to be returned (optionally). If no topic is assigned, returns all valid topics. If the number of results is not specified, nerds returns one random result by default. nerdsJS retrieves random data up to either the `results` or the size of the collection.
-
 Parameter | Type | Description
 ---|---|---
 topic|String|The topic that the data is based off of.
 results|Number|Max number of results that will be returned.
+
+Sets the topic and the max number of results to be returned (optionally). If no topic is assigned, returns all valid topics. If the number of results is not specified, nerds returns one random result by default. nerdsJS retrieves random data up to either the `results` or the size of the collection.
 
 ```javascript
 nerds.resolve('Harry Potter');  //sets topic and returns the nerd context
@@ -106,6 +106,10 @@ console.log(fields);
 
 ### `include(fields)`
 
+Parameter | Type | Description
+---|---|---
+fields|Array of Strings|The fields to include in the results.
+
 Sets the fields to be included in the results. Accepts an array of strings. Any field not specified will not be included in the results. Topic must be set first.
 
 ```javascript
@@ -114,24 +118,19 @@ nerds.resolve('Star Wars').include(['first', 'last'])  //sets fields and returns
 
 `include` returns the `nerds` context, meaning you can (and should) continue chaining subsequent methods.
 
-Parameter | Type | Description
----|---|---
-fields|Array of Strings|The fields to include in the results.
-
 ---
 
 ### `exclude(fields)`
+
+Parameter | Type | Description
+---|---|---
+fields|Array of Strings|The fields to exclude from the results.
 
 Sets the fields to be excluded in the results. Accepts an array of strings. Any field not specified will be included in the results. Topic must be set first.
 
 ```javascript
 nerds.resolve('Star Wars').exclude(['first', 'last'])  //sets fields and returns the nerd context
 ```
-
-Parameter | Type | Description
----|---|---
-fields|Array of Strings|The fields to exclude from the results.
-
 `exclude` returns the `nerds` context, meaning you can (and should) continue chaining subsequent methods.
 
 ---

@@ -42,10 +42,10 @@ console.log(multiPoke);
 ]
 */
 
-let genSW = nerds.resolve('Star Wars', 3).exclude(['first', 'last']).asGenerator();
-genSW.next().value; // {"full":"Luke Skywalker"}
-genSW.next().value; // {"full":"Nute Gunray"}
-genSW.next().value; // {"full":"Leia Organa"}
+let genSW = nerds.resolve('Star Wars', 3).include(['name']).asGenerator();
+genSW.next().value; // {"name":"Luke Skywalker"}
+genSW.next().value; // {"name":"Nute Gunray"}
+genSW.next().value; // {"name":"Leia Organa"}
 genSW.next().value; // undefined
 ```
 
@@ -113,7 +113,7 @@ fields|Array of Strings|The fields to include in the results.
 Sets the fields to be included in the results. Accepts an array of strings. Any field not specified will not be included in the results. Topic must be set first.
 
 ```javascript
-nerds.resolve('Star Wars').include(['first', 'last'])  //sets fields and returns the nerd context
+nerds.resolve('Star Wars').include(['name', 'homeworld'])  //sets fields and returns the nerd context
 ```
 
 `include` returns the `nerds` context, meaning you can (and should) continue chaining subsequent methods.
@@ -129,7 +129,7 @@ fields|Array of Strings|The fields to exclude from the results.
 Sets the fields to be excluded in the results. Accepts an array of strings. Any field not specified will be included in the results. Topic must be set first.
 
 ```javascript
-nerds.resolve('Star Wars').exclude(['first', 'last'])  //sets fields and returns the nerd context
+nerds.resolve('Star Wars').exclude(['birth_year', 'eye_color'])  //sets fields and returns the nerd context
 ```
 `exclude` returns the `nerds` context, meaning you can (and should) continue chaining subsequent methods.
 
@@ -207,7 +207,6 @@ gen.next().value;  // undefined
 nerdsJS is still under active development. Collecting, cleaning, compiling, and updating datasets are great ways to contribute. Just make sure that the data is consistent (they should all have the same keys and most of the fields should have some kind of data).
 
 Topics Yet To Be Added:
-- Star Wars (Needs more data)
 - Super Mario
 - Sherlock
 - Lord Of The Rings

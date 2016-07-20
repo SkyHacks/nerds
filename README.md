@@ -1,4 +1,4 @@
-# nerdsJS
+![nerdsJS Logo](https://cloud.githubusercontent.com/assets/10717361/16980893/6926284c-4e25-11e6-8447-da4e9adc3003.png)
 
 ## The API after every nerd's heart...
 

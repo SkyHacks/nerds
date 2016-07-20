@@ -5,6 +5,8 @@ const _sampleSize = require('lodash/sampleSize');
 const _isArray = require('lodash/isArray');
 const _omit = require('lodash/omit');
 const _pick = require('lodash/pick');
+let nerds;
+let _search;
 
 module.exports = nerds = {
 	resolve,
@@ -15,8 +17,6 @@ module.exports = nerds = {
 	asPromise,
 	asGenerator
 }
-
-let _search;
 
 /**
  * Resolves the chosen topic and number of results

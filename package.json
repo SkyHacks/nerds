@@ -15,7 +15,8 @@
   "scripts": {
     "test": "mocha",
     "testw": "mocha -w",
-    "cover": "istanbul cover _mocha  && istanbul-coveralls"
+    "cover": "istanbul cover _mocha",
+    "coveralls": "istanbul cover _mocha && istanbul-coveralls"
   },
   "repository": {
     "type": "git",

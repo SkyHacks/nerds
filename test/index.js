@@ -2,7 +2,7 @@
 const nerds = require('../dist/nerds');
 const expect = require('chai').expect;
 const ALL_TOPICS = require('../dist/topics');
-const CORE_METHODS = ['resolve','fields','include','exclude','asArray','asPromise','asGenerator']
+const CORE_METHODS = ['resolve','fields','include','exclude','asArray','asPromise','asGenerator','_reset']
 
 describe('nerdsJS', function () {
 	describe('API: nerds', function () {
@@ -41,8 +41,12 @@ describe('nerdsJS', function () {
 			expect(nerds.resolve("Harry Potter").asArray()).to.have.lengthOf(1);
 		});
 
-		it('should return the correct number of results (<results> passed)', function () {
+		it('should return the correct number of results (Number <results> passed)', function () {
 			expect(nerds.resolve("Harry Potter", 3).asArray()).to.have.lengthOf(3);
+		});
+
+		it('should return the correct number of results (String <results> passed)', function () {
+			expect(nerds.resolve("Harry Potter", '3').asArray()).to.have.lengthOf(3);
 		});
 	});
 
@@ -105,5 +109,51 @@ describe('nerdsJS', function () {
 				return typeof(gen.next) !== 'undefined' && typeof gen.next === 'function';
 			}
 		});
+
+		it('should return an object from the generator', function () {
+			expect(nerds.resolve("Harry Potter").asGenerator().next().value).to.be.an('object');
+		});
 	});
+
+	describe('ERRORS: _paramExceptions', function () {
+		it('resolve(!<String>) should throw', function () {  //Exception code 1
+			expect(nerds.resolve.bind(this, 1)).to.throw(TypeError);
+		});
+
+		it('resolve(<Invalid topic>) should throw', function () {  //Exception code 2
+			expect(nerds.resolve.bind(this, 'invalid')).to.throw(Error);
+		});
+
+		it('resolve(<topic>, <Invalid results>) should throw', function () {  //Exception code 3
+			expect(nerds.resolve.bind(this, 'Harry Potter', 'invalid')).to.throw(TypeError);
+		});
+
+		it('resolve(<topic>, <Invalid Negative results>) should throw', function () {  //Exception code 4
+			expect(nerds.resolve.bind(this, 'Harry Potter', -1)).to.throw(Error);
+		});
+
+		it('include(<Invalid fields>) should throw', function () {  //Exception code 5
+			expect(nerds.resolve("Harry Potter").include.bind(this, 'not array')).to.throw(Error);
+		});
+
+		it('include([<Invalid Number field>]) should throw', function () {  //Exception code 6
+			expect(nerds.resolve("Harry Potter").include.bind(this, [1])).to.throw(TypeError);
+		});
+
+		it('include([<Invalid String field>]) should throw', function () {  //Exception code 7
+			expect(nerds.resolve("Harry Potter").include.bind(this, ['invalid'])).to.throw(Error);
+		});
+	});
+
+	describe('ERRORS: _funcExceptions', function () {
+		it('nerds.fields() should throw', function () {  //Exception code 1
+			nerds._reset();
+			expect(nerds.fields.bind(this)).to.throw(Error);
+		});
+
+		it('nerds.include() should throw', function () {  //Exception code 2
+			expect(nerds.include.bind(this, ['wand'])).to.throw(Error);
+		});
+	});
+
 });

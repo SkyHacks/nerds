@@ -15,7 +15,8 @@ module.exports = nerds = {
 	exclude,
 	asArray,
 	asPromise,
-	asGenerator
+	asGenerator,
+	_reset
 }
 
 /**
@@ -110,6 +111,13 @@ function* asGenerator () {
 ///////////////////////////////////
 
 /**
+ * Resets the nerds state
+ */
+function _reset () {
+	_search = {};
+}
+
+/**
  * Returns the search results and resets the search object
  * @return {arr}    Array of search result objects
  */
@@ -144,7 +152,7 @@ function _paramException (errorCode, metadata) {
 		3: () => new TypeError (`==> resolve() expects a NUMBER or STRING representing the number of results as the second argument.`),
 		4: () => new Error     (`==> resolve() expects the second argument to represent a positive integer.`),
 		5: () => new TypeError (`==> ${metadata}() expects the first argument to be an array of fields. Like ['first name', 'last name'].`),
-		6: () => new Error     (`==> Invalid field! ${metadata}() expects an ARRAY of STRINGS as the first argument.`),
+		6: () => new TypeError (`==> Invalid field! ${metadata}() expects an ARRAY of STRINGS as the first argument.`),
 		7: () => new Error     (`==> Invalid field! Double check the fields you are passing to ${metadata}(). Try nerds.resolve(<topics>).fields()`),
 	};
 	return ERROR_MESSAGES[errorCode]();
@@ -158,7 +166,7 @@ function _paramException (errorCode, metadata) {
 function _funcException (errorCode) {
 	const ERROR_MESSAGES = {
 		1: () => new Error (`==> Function Error! You need to call nerds.resolve(<topic>) before requesting the fields.`),
-		1: () => new Error (`==> Function Error! You need to call nerds.resolve(<topic>) before specifying the fields.`),
+		2: () => new Error (`==> Function Error! You need to call nerds.resolve(<topic>) before specifying the fields.`),
 	};
 	return ERROR_MESSAGES[errorCode]();
 }

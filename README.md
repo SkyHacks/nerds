@@ -1,5 +1,7 @@
 ![nerdsJS Logo](https://cloud.githubusercontent.com/assets/10717361/16980893/6926284c-4e25-11e6-8447-da4e9adc3003.png)
 
+[![Coverage Status](https://coveralls.io/repos/github/SkyHacks/nerds/badge.svg?branch=master)](https://coveralls.io/github/SkyHacks/nerds?branch=master)
+
 ## The API after every nerd's heart...
 
 nerdsJS is an API for easily generating random data from your favorite nerdy movies, tv shows, and hobbies. Pull mock data into your app or presentation from Pokemon, Harry Potter, Star Wars and more (very soon). Effortlessly compose nerdy datasets by chaining methods in succint and intelligible expressions.
@@ -7,6 +9,8 @@ nerdsJS is an API for easily generating random data from your favorite nerdy mov
 Return the datasets in whatever form works best for you. You can get it as a simple Array, wrapped in a Promise, or even get a Generator back.
 
 ## Installation
+[![NPM](https://nodei.co/npm/nerds.png?downloads=true)](https://nodei.co/npm/nerds/)
+
 nerdsJS is available on npm. Navigate to your project's folder and run:
 ```
 npm install nerds

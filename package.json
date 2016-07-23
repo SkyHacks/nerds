@@ -8,11 +8,14 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "istanbul-coveralls": "^1.0.3",
     "mocha": "^2.5.3"
   },
   "scripts": {
     "test": "mocha",
-    "testw": "mocha -w"
+    "testw": "mocha -w",
+    "cover": "istanbul cover _mocha  && istanbul-coveralls"
   },
   "repository": {
     "type": "git",

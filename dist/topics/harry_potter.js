@@ -7,48 +7,53 @@ module.exports = {
 		'birthday',
 		'gender',
 		'house',
-		'wand'
+		'wand',
+		'patronus'
 	],
 	data: [
 		{
 		'first': 'Harry',
 		'last': 'Potter',
-		'full': 'Harry Potter',
+		'full': 'Harry James Potter',
 		'blood_status': 'Half-Blood',
 		'birthday': '31 July, 1980',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '11", Holly - Phoenix Feather'
+		'wand': '11", Holly - Phoenix Feather',
+		'patronus': 'Stag'
 		},
 		{
 		'first': 'Ron',
 		'last': 'Weasley',
-		'full': 'Ron Weasley',
+		'full': 'Ronald Bilius Weasley',
 		'blood_status': 'Pure-Blood',
 		'birthday': '1 March, 1980',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '12", Ash - Unicorn Hair'
+		'wand': '12", Ash - Unicorn Hair',
+		'patronus': 'Jack Russell Terrier'
 		},
 		{
 		'first': 'Hermione',
 		'last': 'Granger',
-		'full': 'Hermione Granger',
+		'full': 'Hermione Jean Granger',
 		'blood_status': 'Muggle-Born',
 		'birthday': '19 September, 1979',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': '10¾", Vine Wood - Dragon Heartstring'
+		'wand': '10¾", Vine Wood - Dragon Heartstring',
+		'patronus': 'Otter'
 		},
 		{
 		'first': 'Albus',
 		'last': 'Dumbledore',
-		'full': 'Albus Dumbledore',
+		'full': 'Albus Percival Wulfric Brian Dumbledore',
 		'blood_status': 'Half-Blood',
 		'birthday': 'Summer 1881',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '15", Elder - Thestral Tail Hair'
+		'wand': '15", Elder - Thestral Tail Hair',
+		'patronus': 'Phoenix'
 		},
 		{
 		'first': 'Rubeus',
@@ -58,7 +63,8 @@ module.exports = {
 		'birthday': '6 December, 1928',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '16", Oak'
+		'wand': '16", Oak',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Severus',
@@ -68,7 +74,8 @@ module.exports = {
 		'birthday': '9 January, 1960',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Doe'
 		},
 		{
 		'first': 'Tom',
@@ -78,7 +85,8 @@ module.exports = {
 		'birthday': '31 December, 1926',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': '13½", Yew - Phoenix Feather'
+		'wand': '13½", Yew - Phoenix Feather',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Sirius',
@@ -88,17 +96,19 @@ module.exports = {
 		'birthday': '3 November, 1959',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Draco',
 		'last': 'Malfoy',
-		'full': 'Draco Malfoy',
+		'full': 'Draco Lucius Malfoy',
 		'blood_status': 'Pure-Blood',
 		'birthday': '5 June, 1980',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': '10", Hawthorn - Unicorn Hair'
+		'wand': '10", Hawthorn - Unicorn Hair',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Fred',
@@ -108,17 +118,19 @@ module.exports = {
 		'birthday': '1 April, 1978',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Remus',
 		'last': 'Lupin',
-		'full': 'Remus Lupin',
+		'full': 'Remus John Lupin',
 		'blood_status': 'Half-Blood',
 		'birthday': '10 March, 1960',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '10¼", Cypress - Unicorn Hair'
+		'wand': '10¼", Cypress - Unicorn Hair',
+		'patronus': 'Wolf'
 		},
 		{
 		'first': 'George',
@@ -128,7 +140,8 @@ module.exports = {
 		'birthday': '1 April, 1978',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Neville',
@@ -138,7 +151,8 @@ module.exports = {
 		'birthday': '30 July, 1980',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '13", Cherry - Unicorn Hair'
+		'wand': '13", Cherry - Unicorn Hair',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Arthur',
@@ -148,17 +162,19 @@ module.exports = {
 		'birthday': '6 February, 1950',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Weasel'
 		},
 		{
 		'first': 'Ginny',
 		'last': 'Weasley',
-		'full': 'Ginny Weasley',
+		'full': 'Ginevra Molly Weasley',
 		'blood_status': 'Pure-Blood',
 		'birthday': '11 August, 1981',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': 'Yew'
+		'wand': 'Yew',
+		'patronus': 'Horse'
 		},
 		{
 		'first': 'Minerva',
@@ -168,7 +184,8 @@ module.exports = {
 		'birthday': '4 October, 1935',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': '9½", Fir, Dragon Heartstring'
+		'wand': '9½", Fir, Dragon Heartstring',
+		'patronus': 'Cat'
 		},
 		{
 		'first': 'Molly',
@@ -178,17 +195,19 @@ module.exports = {
 		'birthday': '30 October, 1949',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Dolores',
 		'last': 'Umbridge',
-		'full': 'Dolores Umbridge',
+		'full': 'Dolores Jane Umbridge',
 		'blood_status': 'Half-Blood',
 		'birthday': '26 August, before 1965',
 		'gender': 'Female',
 		'house': 'Slytherin',
-		'wand': '8", Birch - Dragon Heartstring'
+		'wand': '8", Birch - Dragon Heartstring',
+		'patronus': 'Persian Cat'
 		},
 		{
 		'first': 'Alastor',
@@ -198,7 +217,8 @@ module.exports = {
 		'birthday': 'Before 1961',
 		'gender': 'Male',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Vernon',
@@ -208,17 +228,19 @@ module.exports = {
 		'birthday': 'Before 1955',
 		'gender': 'Male',
 		'house': 'N/A',
-		'wand': 'N/A'
+		'wand': 'N/A',
+		'patronus': 'N/A'
 		},
 		{
 		'first': 'Cornelius',
 		'last': 'Fudge',
-		'full': 'Cornelius Fudge',
+		'full': 'Cornelius Oswald Fudge',
 		'blood_status': 'Unknown',
 		'birthday': 'Before 1964',
 		'gender': 'Male',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Peter',
@@ -228,7 +250,8 @@ module.exports = {
 		'birthday': '1960',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '13½", Yew - Phoenix Feather'
+		'wand': '13½", Yew - Phoenix Feather',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Dudley',
@@ -238,27 +261,30 @@ module.exports = {
 		'birthday': '23 June, 1980',
 		'gender': 'Male',
 		'house': 'N/A',
-		'wand': 'N/A'
+		'wand': 'N/A',
+		'patronus': 'N/A'
 		},
 		{
 		'first': 'Horace',
 		'last': 'Slughorn',
-		'full': 'Horace Slughorn',
+		'full': 'Horace Eugene Flaccus Slughorn',
 		'blood_status': 'Pure-Blood',
 		'birthday': 'Between 28 April, 1881 and 28 April, 1899',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': '10¼", Cedar - Dragon Heartstring'
+		'wand': '10¼", Cedar - Dragon Heartstring',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Percy',
 		'last': 'Weasley',
-		'full': 'Percy Weasley',
+		'full': 'Percy Ignatius Weasley',
 		'blood_status': 'Pure-Blood',
 		'birthday': '22 August, 1976 ',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Luna',
@@ -268,7 +294,8 @@ module.exports = {
 		'birthday': '13 February, 1981',
 		'gender': 'Female',
 		'house': 'Ravenclaw',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Hare'
 		},
 		{
 		'first': 'Cedric',
@@ -278,7 +305,8 @@ module.exports = {
 		'birthday': 'Between September and October, 1977',
 		'gender': 'Male',
 		'house': 'Hufflepuff',
-		'wand': '12¼", Ash - Unicorn Hair'
+		'wand': '12¼", Ash - Unicorn Hair',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Petunia',
@@ -288,17 +316,19 @@ module.exports = {
 		'birthday': 'Before 1960',
 		'gender': 'Female',
 		'house': 'N/A',
-		'wand': 'N/A'
+		'wand': 'N/A',
+		'patronus': 'N/A'
 		},
 		{
 		'first': 'Bill',
 		'last': 'Weasley',
-		'full': 'Bill Weasley',
+		'full': 'William Arthur Weasley',
 		'blood_status': 'Pure-Blood',
 		'birthday': '29 November, 1970',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Argus',
@@ -308,7 +338,8 @@ module.exports = {
 		'birthday': 'Before 1956',
 		'gender': 'Male',
 		'house': 'N/A',
-		'wand': 'N/A'
+		'wand': 'N/A',
+		'patronus': 'N/A'
 		},
 		{
 		'first': 'Viktor',
@@ -318,7 +349,8 @@ module.exports = {
 		'birthday': 'Between April, 1976 and August, 1976',
 		'gender': 'Male',
 		'house': 'N/A',
-		'wand': '10¼", Hornbeam - Dragon Heartstring'
+		'wand': '10¼", Hornbeam - Dragon Heartstring',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Gilderoy',
@@ -328,27 +360,29 @@ module.exports = {
 		'birthday': '26 January, 1964',
 		'gender': 'Male',
 		'house': 'Ravenclaw',
-		'wand': '9", Cherry - Dragon Heartstring'
+		'wand': '9", Cherry - Dragon Heartstring',
+		'patronus': 'Non-Corporeal - allegedly'
 		},
 		{
 		'first': 'Sybill',
 		'last': 'Trelawney',
-		'full': 'Sybill Trelawney',
+		'full': 'Sybill Patricia Trelawney',
 		'blood_status': 'Half-Blood',
 		'birthday': '9 March, before 1962',
 		'gender': 'Female',
 		'house': 'Ravenclaw',
-		'wand': '9½", Very Flexible Hazel - Unicorn Hair'
+		'wand': '9½", Very Flexible Hazel - Unicorn Hair',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Fleur',
 		'last': 'Delacour',
-		'full': 'Fleur Delacour',
+		'full': 'Fleur Isabelle Delacour',
 		'blood_status': 'Part-Veela',
 		'birthday': '1977',
 		'gender': 'Female',
 		'house': 'N/A',
-		'wand': '9½", Rosewood - Veela Hair Core'
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Lucius',
@@ -358,7 +392,8 @@ module.exports = {
 		'birthday': '1954',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': '18", Elm, Dragon Heartstring'
+		'wand': '18", Elm, Dragon Heartstring',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Nymphadora',
@@ -368,7 +403,8 @@ module.exports = {
 		'birthday': '1973',
 		'gender': 'Female',
 		'house': 'Hufflepuff',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus':'Jack-Rabbit, later Wolf'
 		},
 		{
 		'first': 'Gregory',
@@ -378,7 +414,8 @@ module.exports = {
 		'birthday': 'Between 1979 and 1980',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Vincent',
@@ -388,7 +425,8 @@ module.exports = {
 		'birthday': 'Between 1979 and 1980',
 		'gender': 'Male',
 		'house': 'Slytherin',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Bellatrix',
@@ -398,7 +436,8 @@ module.exports = {
 		'birthday': '1951',
 		'gender': 'Female',
 		'house': 'Slytherin',
-		'wand': '12¾", Walnut - Dragon Heartstring'
+		'wand': '12¾", Walnut - Dragon Heartstring',
+		'patronus': 'None'
 		},
 		{
 		'first': 'Cho',
@@ -408,7 +447,8 @@ module.exports = {
 		'birthday': 'Between 1978 and 1979',
 		'gender': 'Female',
 		'house': 'Ravenclaw',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Swan'
 		},
 		{
 		'first': 'Dean',
@@ -418,7 +458,8 @@ module.exports = {
 		'birthday': 'Between 1979 and 1980',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Oliver',
@@ -428,7 +469,8 @@ module.exports = {
 		'birthday': 'Between 1975 and 1976',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'James',
@@ -438,7 +480,8 @@ module.exports = {
 		'birthday': '27 March, 1960',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': '11", Mahogany, unknown core'
+		'wand': '11", Mahogany, unknown core',
+		'patronus': 'Stag'
 		},
 		{
 		'first': 'Rita',
@@ -448,7 +491,8 @@ module.exports = {
 		'birthday': '1951',
 		'gender': 'Female',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Seamus',
@@ -458,7 +502,8 @@ module.exports = {
 		'birthday': 'Between 1979 and 1980',
 		'gender': 'Male',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Fox'
 		},
 		{
 		'first': 'Igor',
@@ -468,7 +513,8 @@ module.exports = {
 		'birthday': 'Before 1962',
 		'gender': 'Male',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Poppy',
@@ -478,7 +524,8 @@ module.exports = {
 		'birthday': 'Before 1954',
 		'gender': 'Female',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Rufus',
@@ -488,7 +535,8 @@ module.exports = {
 		'birthday': 'Before 1968',
 		'gender': 'Male',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Mundungus',
@@ -498,7 +546,8 @@ module.exports = {
 		'birthday': 'Before 1962',
 		'gender': 'Male',
 		'house': 'Unknown',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Lavender',
@@ -508,7 +557,8 @@ module.exports = {
 		'birthday': 'Between 1979 and 1980',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Filius',
@@ -518,7 +568,8 @@ module.exports = {
 		'birthday': '17 October',
 		'gender': 'Male',
 		'house': 'Ravenclaw',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Non-Corporeal'
 		},
 		{
 		'first': 'Angelina',
@@ -528,7 +579,8 @@ module.exports = {
 		'birthday': 'Between 24 October, 1977 and 30 October, 1977',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Parvati',
@@ -538,17 +590,19 @@ module.exports = {
 		'birthday': 'Between 2 September, 1979 and 21 April, 1980',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': 'Unknown'
+		'wand': 'Unknown',
+		'patronus': 'Unknown'
 		},
 		{
 		'first': 'Lily',
 		'last': 'Potter',
-		'full': 'Lily Potter',
+		'full': 'Lily J. Potter',
 		'blood_status': 'Muggle-Born',
 		'birthday': '30 January, 1960',
 		'gender': 'Female',
 		'house': 'Gryffindor',
-		'wand': '10¼" Willow - Unknown Core'
+		'wand': '10¼" Willow - Unknown Core',
+		'patronus': 'Doe'
 		}
 	]
 };
